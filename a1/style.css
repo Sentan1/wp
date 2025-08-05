@@ -1,4 +1,10 @@
-.ysabeau-sc {
+:root{
+  --bs-heading-color: #1500ff;
+
+
+}
+
+  .ysabeau-sc {
     font-family: 'Ysabeau SC', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* You can change this */
@@ -51,12 +57,13 @@
   
   h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
+    color: #1500ff;
   }
 
-  
+
   
   .page-titles {
-    color: #a63500;
+    color: #815f5f;
     font-size: 28px;
     margin-bottom: 20px;
   }
@@ -203,3 +210,5 @@
       padding: 12px;
       margin-top: 25px;
   }
+  
+  
