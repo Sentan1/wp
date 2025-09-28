@@ -10,8 +10,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <<<<<<< Updated upstream:a2/gallery.php
+<<<<<<< Updated upstream:a2/gallery.php
   <link rel="icon" href="assets/skills/favicon.ico">
   <link rel="stylesheet" href="./assets/css/style.css"> <!-- FIXED -->
+=======
+  <link rel="icon" href="./skills/favicon.ico">
+  <link rel="stylesheet" href="./assets/css/style.css"> 
+>>>>>>> Stashed changes:a1/Gallery.html
 =======
   <link rel="icon" href="./skills/favicon.ico">
   <link rel="stylesheet" href="./assets/css/style.css"> 
@@ -21,7 +26,10 @@
 
 
 <<<<<<< Updated upstream:a2/gallery.php
+<<<<<<< Updated upstream:a2/gallery.php
   
+=======
+>>>>>>> Stashed changes:a1/Gallery.html
 =======
 >>>>>>> Stashed changes:a1/Gallery.html
   <nav class="navbar navbar-expand-lg navbar-custom">
@@ -32,7 +40,10 @@
 
 
 <<<<<<< Updated upstream:a2/gallery.php
+<<<<<<< Updated upstream:a2/gallery.php
 
+=======
+>>>>>>> Stashed changes:a1/Gallery.html
 =======
 >>>>>>> Stashed changes:a1/Gallery.html
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
