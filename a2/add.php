@@ -25,7 +25,7 @@
       <nav class="navbar navbar-expand-lg" style="background-color: #cd4f07;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/skills/favicon.ico" alt="SkillSwap Logo" width="30">
+          <img src="assets/images/skills/favicon.ico" alt="SkillSwap Logo" width="30">
         </a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link text-white" href="index.php">Home</a></li>

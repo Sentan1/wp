@@ -10,9 +10,9 @@ $isJacob5 = strpos($serverName, 'talsprddb02.int.its.rmit.edu.au') !== false || 
 if ($isJacob5) {
   // Jacob 5 connection — replace placeholders with actual values
   $dbHost = 'talsprddb02.int.its.rmit.edu.au';
-  $dbUser = 'your_student_id';
-  $dbPass = 'your_password';
-  $dbName = 'your_student_id';
+  $dbUser = 's4169598';
+  $dbPass = 'Huh???2006';
+  $dbName = 's4169598';
 } else {
   // Localhost (XAMPP)
   $dbHost = 'localhost';
