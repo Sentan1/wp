@@ -9,19 +9,19 @@
 <div id="skillCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="../a1/assets/skills/8.png" class="d-block w-100" alt="French Pastry Making">
+      <img src="assets/images/skills/8.png" class="d-block w-100" alt="French Pastry Making">
       <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
         <h5 class="text-white">French Pastry Making</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../a1/assets/skills/1.png" class="d-block w-100" alt="Intro to PHP & MySQL">
+      <img src="assets/images/skills/1.png" class="d-block w-100" alt="Intro to PHP & MySQL">
       <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
         <h5 class="text-white">Intro to PHP & MySQL</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="../a1/assets/skills/6.png" class="d-block w-100" alt="Fingerstyle Guitar">
+      <img src="assets/images/skills/6.png" class="d-block w-100" alt="Fingerstyle Guitar">
       <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
         <h5 class="text-white">Intermediate Fingerstyle</h5>
       </div>
@@ -43,7 +43,7 @@
 <div class="row row-cols-1 row-cols-md-4 g-4">
   <div class="col">
     <div class="card border-0 text-center">
-      <img src="../a1/assets/skills/1.png" class="card-img-top skill-img" alt="PHP">
+      <img src="assets/images/skills/1.png" class="card-img-top skill-img" alt="PHP">
       <div class="card-body">
         <h6 class="card-title">Intro to PHP & MySQL</h6>
         <p class="card-text">Rate: $55.00/hr</p>
@@ -53,7 +53,7 @@
   </div>
   <div class="col">
     <div class="card border-0 text-center">
-      <img src="../a1/assets/skills/6.png" class="card-img-top skill-img" alt="Guitar">
+      <img src="assets/images/skills/6.png" class="card-img-top skill-img" alt="Guitar">
       <div class="card-body">
         <h6 class="card-title">Intermediate Fingerstyle</h6>
         <p class="card-text">Rate: $45.00/hr</p>
@@ -63,7 +63,7 @@
   </div>
   <div class="col">
     <div class="card border-0 text-center">
-      <img src="../a1/assets/skills/7.png" class="card-img-top skill-img" alt="Bread">
+      <img src="assets/images/skills/7.png" class="card-img-top skill-img" alt="Bread">
       <div class="card-body">
         <h6 class="card-title">Artisan Bread Baking</h6>
         <p class="card-text">Rate: $25.00/hr</p>
@@ -73,7 +73,7 @@
   </div>
   <div class="col">
     <div class="card border-0 text-center">
-      <img src="../a1/assets/skills/8.png" class="card-img-top skill-img" alt="Pastry">
+      <img src="assets/images/skills/8.png" class="card-img-top skill-img" alt="Pastry">
       <div class="card-body">
         <h6 class="card-title">French Pastry Making</h6>
         <p class="card-text">Rate: $30.00/hr</p>

@@ -4,7 +4,7 @@
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.php" title="Home">
-      <img src="../a1/assets/skills/favicon.ico" alt="SkillSwap Logo" width="32" height="32">
+      <img src="assets/images/SkillSwap_logo.png" alt="SkillSwap Logo" width="32" height="32">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

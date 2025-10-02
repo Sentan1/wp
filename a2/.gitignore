@@ -1,4 +1,5 @@
 # Ignore uploaded skill images
-assets/images/skills/
+# Ignore only uploaded files; keep seed images versioned
+assets/images/skills/uploads/
 
 
