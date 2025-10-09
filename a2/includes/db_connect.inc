@@ -6,12 +6,12 @@ if (strstr($_SERVER['SERVER_NAME'], 'localhost')) {
   $servername = "localhost";
   $username = "root";
   $password = "Huh???2006";
-  $dbname = "e54061";
+  $dbname = "s4169598";
 } else {
   $servername = "talsprddb02.int.its.rmit.edu.au";
-  $username = "e54061";
-  include("/home/eh1/e54061/public_html/.htdb_pass");
-  $dbname = "e54061";
+  $username = "s4169598";
+  $password = "Huh???2006";
+  $dbname = "s4169598";
 }
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
