@@ -10,7 +10,7 @@ $skillId = isset($_GET['id']) ? (int) $_GET['id'] : 0;
 $skill = null;
 
 if ($skillId > 0) {
-  $sql = "SELECT id, title, description, category, level, rate, image_path FROM skills WHERE id = ?";
+  $sql = "SELECT skill_id, title, description, category, level, rate, image_path FROM skills WHERE id = ?";
   if ($stmt = mysqli_prepare($conn, $sql)) {
     mysqli_stmt_bind_param($stmt, 'i', $skillId);
     mysqli_stmt_execute($stmt);
