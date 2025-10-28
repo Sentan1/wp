@@ -25,13 +25,13 @@
       <nav class="navbar navbar-expand-lg" style="background-color: #cd4f07;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/skills/favicon.ico" alt="SkillSwap Logo" width="30">
+          <img src="assets/images/skills/favicon.ico" alt="SkillSwap Logo" width="30">
         </a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="skills.html">All Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="add.html">Add Skill</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="skills.php">All Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallery.php">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="add.php">Add Skill</a></li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search skills..." aria-label="Search">
