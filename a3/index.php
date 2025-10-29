@@ -29,7 +29,7 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
         <?php endforeach; ?>
       <?php else: ?>
         <div class="carousel-item active">
-          <img src="assets/images/skills/skills_banner.png" class="d-block w-100" alt="No skills yet">
+          <img src="assets/images/skills_banner.png" class="d-block w-100" alt="No skills yet">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
             <h5 class="text-white">No skills yet</h5>
           </div>
