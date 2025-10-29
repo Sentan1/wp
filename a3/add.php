@@ -21,8 +21,14 @@
       <label for="level" class="form-label">Level *</label>
       <select class="form-select" id="level" name="level" required>
         <option value="">Please select</option>
+
+
         <option value="beginner">Beginner</option>
+
+
         <option value="intermediate">Intermediate</option>
+
+
         <option value="expert">Expert</option>
       </select>
     </div>
@@ -36,6 +42,5 @@
       <div class="error-message mt-2">Only image files are allowed (JPG, PNG, GIF, WEBP).</div>
     </div>
     <button type="submit" class="btn submit-btn">Submit</button>
-  </form>
-</main>
+ z`</main>
 <?php include 'includes/footer.inc'; ?>
