@@ -14,6 +14,7 @@
     mysqli_stmt_close($stmt);
   }
   $categories = array_keys($cats);
+  $defaultImg = 'assets/images/skills/1.png';
   ?>
   <div class="mb-3 category-filter">
     <div class="btn-group" role="group" aria-label="Category filter">
@@ -24,10 +25,10 @@
     </div>
   </div>
   <div class="gallery">
-    <?php foreach ($skills as $s): ?>
+    <?php foreach ($skills as $s): $img = !empty($s['image_path']) ? $s['image_path'] : $defaultImg; ?>
       <div class="gallery-item" data-category="<?php echo htmlspecialchars($s['category']); ?>">
-        <a href="details.php?id=<?php echo (int)$s['skill_id']; ?>" data-image-modal="<?php echo htmlspecialchars($s['image_path']); ?>">
-          <img src="<?php echo htmlspecialchars($s['image_path']); ?>" alt="<?php echo htmlspecialchars($s['title']); ?>">
+        <a href="details.php?id=<?php echo (int)$s['skill_id']; ?>" data-image-modal="<?php echo htmlspecialchars($img); ?>">
+          <img src="<?php echo htmlspecialchars($img); ?>" alt="<?php echo htmlspecialchars($s['title']); ?>">
         </a>
         <p><?php echo htmlspecialchars($s['title']); ?></p>
       </div>

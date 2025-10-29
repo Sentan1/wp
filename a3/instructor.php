@@ -26,6 +26,7 @@ if ($instructorId > 0) {
     mysqli_stmt_close($stmt);
   }
 }
+$defaultImg = 'assets/images/skills/1.png';
 ?>
 <main class="container my-5">
   <?php if (!$instructor): ?>
@@ -34,10 +35,10 @@ if ($instructorId > 0) {
     <h1 class="page-title mb-3"><?php echo htmlspecialchars($instructor['username']); ?></h1>
     <p class="text-muted mb-4">Contact: <?php echo htmlspecialchars($instructor['email']); ?></p>
     <div class="row row-cols-1 row-cols-md-4 g-4">
-      <?php foreach ($skills as $s): ?>
+      <?php foreach ($skills as $s): $img = !empty($s['image_path']) ? $s['image_path'] : $defaultImg; ?>
         <div class="col">
           <div class="card border-0 text-center">
-            <img src="<?php echo htmlspecialchars($s['image_path']); ?>" class="card-img-top skill-img" alt="<?php echo htmlspecialchars($s['title']); ?>">
+            <img src="<?php echo htmlspecialchars($img); ?>" class="card-img-top skill-img" alt="<?php echo htmlspecialchars($s['title']); ?>">
             <div class="card-body">
               <h6 class="card-title"><?php echo htmlspecialchars($s['title']); ?></h6>
               <p class="card-text">Rate: $<?php echo number_format((float)$s['rate'], 2); ?>/hr</p>

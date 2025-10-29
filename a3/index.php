@@ -11,6 +11,7 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
   while ($row = mysqli_fetch_assoc($result)) { $skills[] = $row; }
   mysqli_stmt_close($stmt);
 }
+$defaultImg = 'assets/images/skills/1.png';
 ?>
 <div class="container my-5">
   <h1 style="color:#cd4f07; font-weight: normal;">SkillSwap</h1>
@@ -19,9 +20,9 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
   <div id="skillCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
       <?php if ($skills): ?>
-        <?php foreach ($skills as $i => $s): ?>
+        <?php foreach ($skills as $i => $s): $img = !empty($s['image_path']) ? $s['image_path'] : $defaultImg; ?>
           <div class="carousel-item <?php echo $i === 0 ? 'active' : ''; ?>">
-            <img src="<?php echo htmlspecialchars($s['image_path']); ?>" class="d-block w-100" alt="<?php echo htmlspecialchars($s['title']); ?>">
+            <img src="<?php echo htmlspecialchars($img); ?>" class="d-block w-100" alt="<?php echo htmlspecialchars($s['title']); ?>">
             <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
               <h5 class="text-white"><?php echo htmlspecialchars($s['title']); ?></h5>
             </div>
@@ -47,10 +48,10 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
   </div>
 
   <div class="row row-cols-1 row-cols-md-4 g-4">
-    <?php foreach ($skills as $s): ?>
+    <?php foreach ($skills as $s): $img = !empty($s['image_path']) ? $s['image_path'] : $defaultImg; ?>
       <div class="col">
         <div class="card border-0 text-center">
-          <img src="<?php echo htmlspecialchars($s['image_path']); ?>" class="card-img-top skill-img" alt="<?php echo htmlspecialchars($s['title']); ?>">
+          <img src="<?php echo htmlspecialchars($img); ?>" class="card-img-top skill-img" alt="<?php echo htmlspecialchars($s['title']); ?>">
           <div class="card-body">
             <h6 class="card-title"><?php echo htmlspecialchars($s['title']); ?></h6>
             <p class="card-text">Rate: $<?php echo number_format((float)$s['rate'], 2); ?>/hr</p>

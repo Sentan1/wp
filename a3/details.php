@@ -14,15 +14,16 @@ if ($skillId > 0) {
     mysqli_stmt_close($stmt);
   }
 }
+$defaultImg = 'assets/images/skills/1.png';
 ?>
 <main class="container my-5">
   <?php if (!$skill): ?>
     <div class="alert alert-warning" role="alert">Skill not found.</div>
-  <?php else: ?>
+  <?php else: $img = !empty($skill['image_path']) ? $skill['image_path'] : $defaultImg; ?>
     <div class="row g-4">
       <div class="col-md-5">
-        <a href="#" data-image-modal="<?php echo htmlspecialchars($skill['image_path']); ?>">
-          <img src="<?php echo htmlspecialchars($skill['image_path']); ?>" class="img-fluid rounded" alt="<?php echo htmlspecialchars($skill['title']); ?>">
+        <a href="#" data-image-modal="<?php echo htmlspecialchars($img); ?>">
+          <img src="<?php echo htmlspecialchars($img); ?>" class="img-fluid rounded" alt="<?php echo htmlspecialchars($skill['title']); ?>">
         </a>
       </div>
       <div class="col-md-7">
