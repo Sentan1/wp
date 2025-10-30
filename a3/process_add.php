@@ -37,14 +37,16 @@ if (!move_uploaded_file($tmp, $destPath)) {
 }
 $imagePathForDb = 'assets/images/skills/' . $uniqueName;
 
-$sql = "INSERT INTO skills (title, description, category, level, rate, image_path, user_id, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())";
+$sql = "INSERT INTO skills (title, description, category, level, rate_per_hr, image_path, user_id, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())";
 if ($stmt = mysqli_prepare($conn, $sql)) {
   $rateNum = (float)$rate;
   $userId = (int)$_SESSION['user_id'];
+  // Normalize level capitalization to match ENUM
+  $level = ucfirst(strtolower($level));
   mysqli_stmt_bind_param($stmt, 'ssssdsd', $title, $description, $category, $level, $rateNum, $imagePathForDb, $userId);
   if (mysqli_stmt_execute($stmt)) {
     add_flash('success', 'Skill added successfully.');
-    header('Location: index.php');
+    header('Location: gallery.php');
     exit;
   }
 }
