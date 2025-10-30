@@ -15,7 +15,7 @@
   ?>
   <div class="row align-items-start">
     <div class="col-md-4">
-      <img src="assets/images/skills_banner.png" class="img-fluid" alt="Skills Overview">
+      <img src="./assets/images/skills_banner.png" class="img-fluid" alt="Skills Overview">
     </div>
     <div class="col-md-8">
       <table class="table table-striped table-hover align-middle">
