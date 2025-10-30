@@ -25,13 +25,13 @@
       <nav class="navbar navbar-expand-lg" style="background-color: #cd4f07;">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="assets/skills/favicon.ico" alt="SkillSwap Logo" width="30">
+          <img src="assets/images/skills/favicon.ico" alt="SkillSwap Logo" width="30">
         </a>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="skills.html">All Skills</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="add.html">Add Skill</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="skills.php">All Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="gallery.php">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="add.php">Add Skill</a></li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search skills..." aria-label="Search">
@@ -41,7 +41,7 @@
       </nav>
     </div>
     <div class="container my-4">
-        <h1 class = "page-titles">Add New Skill</h1>
+        <h1 class="page-titles">Add New Skill</h1>
         <form class="add-skill-form">
 
 
@@ -49,7 +49,7 @@
 
           <div class="mb-3">
             <label for="title" class="form-label">Title *</label>
-            <input type="text" class="form-control" name="title" placeholder="Enter skill title">
+            <input type="text" class="form-control" id="title" placeholder="Enter skill title">
           </div>
           <div class="mb-3">
             <label for="description" class="form-label">Description *</label>
