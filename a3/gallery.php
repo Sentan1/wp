@@ -26,7 +26,24 @@
       </div>
     </div>
     <div class="gallery">
-      <?php foreach ($skills as $s): $img = !empty($s['image_path']) ? $s['image_path'] : $defaultImg; ?>
+      <?php foreach ($skills as $s):
+        $img = !empty($s['image_path']) ? $s['image_path'] : $defaultImg;
+        // Normalize to paths under a3/assets/... for server portability
+        if (strpos($img, 'http://') !== 0 && strpos($img, 'https://') !== 0) {
+          $img = ltrim($img, '/');
+          if (strpos($img, 'a3/') === 0) { $img = substr($img, 3); }
+          if (strpos($img, 'assets/') !== 0) {
+            if (strpos($img, 'images/') === 0) {
+              $img = 'assets/' . $img; // e.g., images/skills/3.png -> assets/images/skills/3.png
+            } else if (strpos($img, '/') === false) {
+              $img = 'assets/images/skills/' . $img; // e.g., 3.png -> assets/images/skills/3.png
+            } else {
+              // fallback: assume already relative into assets
+              $img = 'assets/' . $img;
+            }
+          }
+        }
+      ?>
         <div class="gallery-item" data-category="<?php echo htmlspecialchars($s['category']); ?>">
           <a href="details.php?id=<?php echo (int)$s['skill_id']; ?>" data-image-modal="<?php echo htmlspecialchars($img); ?>">
             <img src="<?php echo htmlspecialchars($img); ?>" alt="<?php echo htmlspecialchars($s['title']); ?>">
