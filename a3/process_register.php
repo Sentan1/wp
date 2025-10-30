@@ -45,8 +45,8 @@ if (mysqli_stmt_num_rows($stmt) > 0) {
 }
 mysqli_stmt_close($stmt);
 
-$hash = password_hash($password, PASSWORD_DEFAULT);
-$sql = "INSERT INTO users (username, email, password_hash, created_at) VALUES (?, ?, ?, NOW())";
+$hash = password($password, PASSWORD_DEFAULT);
+$sql = "INSERT INTO users (username, email, password, created_at) VALUES (?, ?, ?, NOW())";
 if (!($stmt = mysqli_prepare($conn, $sql))) {
   add_flash('danger', 'Registration error (prepare insert): ' . mysqli_error($conn));
   header('Location: register.php');
