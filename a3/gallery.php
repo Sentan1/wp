@@ -14,7 +14,7 @@
     mysqli_stmt_close($stmt);
   }
   $categories = array_keys($cats);
-  $defaultImg = 'a3/assets/images/skills/1.png';
+  $defaultImg = 'a3/assets/images/skills/3.png';
   ?>
   <?php if (!empty($skills)): ?>
     <div class="mb-3 category-filter">
