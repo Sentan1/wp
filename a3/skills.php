@@ -5,7 +5,7 @@
   <h1 style="color:#cd4f07; font-weight: normal;">All Skills</h1>
   <?php
   $skills = [];
-  $sql = "SELECT skill_id, title, category, level, rate FROM skills ORDER BY created_at DESC";
+  $sql = "SELECT skill_id, title, category, level, rate_per_hr AS rate FROM skills ORDER BY created_at DESC";
   if ($stmt = mysqli_prepare($conn, $sql)) {
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
