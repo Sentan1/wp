@@ -37,7 +37,7 @@
     </div>
   <?php else: ?>
     <div class="gallery">
-      <div class="gallery-item"><a href="#" data-image-modal="assets/images/skills/1.png"><img src="assets/images/skills/1.png" alt="Beginner Guitar Lessons"></a><p>Beginner Guitar Lessons</p></div>
+      <div class="gallery-item"><a href="#" data-image-modal="a3/assets/images/skills/1.png"><img src="assets/images/skills/1.png" alt="Beginner Guitar Lessons"></a><p>Beginner Guitar Lessons</p></div>
       <div class="gallery-item"><a href="#" data-image-modal="assets/images/skills/2.png"><img src="assets/images/skills/2.png" alt="Intermediate Fingerstyle"></a><p>Intermediate Fingerstyle</p></div>
       <div class="gallery-item"><a href="#" data-image-modal="assets/images/skills/3.png"><img src="assets/images/skills/3.png" alt="Artisan Bread Baking"></a><p>Artisan Bread Baking</p></div>
       <div class="gallery-item"><a href="#" data-image-modal="assets/images/skills/4.png"><img src="assets/images/skills/4.png" alt="French Pastry Making"></a><p>French Pastry Making</p></div>
