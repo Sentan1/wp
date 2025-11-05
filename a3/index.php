@@ -4,7 +4,7 @@
 <?php
 // Fetch latest 4 skills for carousel and grid
 $skills = [];
-$sql = "SELECT skill_id, title, rate, image_path FROM skills ORDER BY created_at DESC LIMIT 4";
+$sql = "SELECT skill_id, title, rate_per_hr AS rate, image_path FROM skills ORDER BY created_at DESC LIMIT 4";
 if ($stmt = mysqli_prepare($conn, $sql)) {
   mysqli_stmt_execute($stmt);
   $result = mysqli_stmt_get_result($stmt);
@@ -30,25 +30,10 @@ $defaultImg = 'assets/images/skills/1.png';
         <?php endforeach; ?>
       <?php else: ?>
         <div class="carousel-item active">
-          <img src="assets/images/skills/8.png" class="d-block w-100" alt="Intro to PHP & MySQL">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-            <h5 class="text-white">Intro to PHP & MySQL</h5>
-          </div>
-        </div>
-
-
-        <div class="carousel-item">
-          <img src="assets/images/skills/1.png" class="d-block w-100" alt="Beginner Guitar Lessons">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-            <h5 class="text-white">Beginner Guitar Lessons</h5>
-          </div>
-        </div>
-
-        
-        <div class="carousel-item">
-          <img src="assets/images/skills/6.png" class="d-block w-100" alt="Digital Illustration with Procreate">
-          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-            <h5 class="text-white">Digital Illustration with Procreate</h5>
+          <div class="d-block w-100 bg-light" style="height: 400px; display: flex; align-items: center; justify-content: center;">
+            <div class="text-center p-4">
+              <p class="text-muted">No skills available yet. <a href="add.php">Add a skill</a> to get started!</p>
+            </div>
           </div>
         </div>
       <?php endif; ?>
@@ -78,44 +63,9 @@ $defaultImg = 'assets/images/skills/1.png';
         </div>
       <?php endforeach; ?>
     <?php else: ?>
-      <div class="col">
-        <div class="card border-0 text-center">
-          <img src="assets/images/skills/1.png" class="card-img-top skill-img" alt="Beginner Guitar Lessons">
-          <div class="card-body">
-            <h6 class="card-title">Beginner Guitar Lessons</h6>
-            <p class="card-text">Rate: $30.00/hr</p>
-            <a href="details.php?id=1" class="btn btn-sm btn-primary rounded-pill" style="background-color:#cd4f07; border:none;">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card border-0 text-center">
-          <img src="assets/images/skills/6.png" class="card-img-top skill-img" alt="Digital Illustration with Procreate">
-          <div class="card-body">
-            <h6 class="card-title">Digital Illustration with Procreate</h6>
-            <p class="card-text">Rate: $40.00/hr</p>
-            <a href="details.php?id=6" class="btn btn-sm btn-primary rounded-pill" style="background-color:#cd4f07; border:none;">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card border-0 text-center">
-          <img src="assets/images/skills/7.png" class="card-img-top skill-img" alt="Morning Vinyasa Flow">
-          <div class="card-body">
-            <h6 class="card-title">Morning Vinyasa Flow</h6>
-            <p class="card-text">Rate: $35.00/hr</p>
-            <a href="details.php?id=7" class="btn btn-sm btn-primary rounded-pill" style="background-color:#cd4f07; border:none;">View Details</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card border-0 text-center">
-          <img src="assets/images/skills/8.png" class="card-img-top skill-img" alt="Intro to PHP & MySQL">
-          <div class="card-body">
-            <h6 class="card-title">Intro to PHP & MySQL</h6>
-            <p class="card-text">Rate: $55.00/hr</p>
-            <a href="details.php?id=8" class="btn btn-sm btn-primary rounded-pill" style="background-color:#cd4f07; border:none;">View Details</a>
-          </div>
+      <div class="col-12">
+        <div class="alert alert-info text-center">
+          <p>No skills available yet. <a href="add.php">Add a skill</a> to get started!</p>
         </div>
       </div>
     <?php endif; ?>
