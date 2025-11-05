@@ -1,4 +1,10 @@
-.ysabeau-sc {
+:root{
+  --bs-heading-color: #1500ff;
+
+
+}
+
+  .ysabeau-sc {
     font-family: 'Ysabeau SC', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* You can change this */
@@ -28,29 +34,36 @@
     padding: 0 4px;
   }
   
-  /* Create two equal columns that sits next to each other */
+
+
+ 
   .column {
     flex: 50%;
     padding: 0 4px;
   }
   
+
+
   .column img {
     margin-top: 8px;
     vertical-align: middle;
   }
   body {
     font-family: 'Ysabeau SC', sans-serif;
-    background-color: #fff5f8;
-    color: #333333;
+    background-color: #ffffff;
+    color: #302828;
     margin: 0;
   }
   
   h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
+    color: #1500ff;
   }
+
+
   
   .page-titles {
-    color: #a63500;
+    color: #815f5f;
     font-size: 28px;
     margin-bottom: 20px;
   }
@@ -85,7 +98,7 @@
   
   .submit-btn {
     background-color: #cd4f07;
-    color: white;
+    color: rgb(255, 17, 17);
     border-radius: 20px;
     padding: 8px 20px;
     font-size: 14px;
@@ -100,6 +113,9 @@
     font-size: 12px;
   }
   
+<<<<<<< HEAD:a1/style.css
+ 
+=======
   body {
       margin: 0;
       font-family: 'Georgia', serif;
@@ -337,3 +353,4 @@ h1, h2, h3 {
   padding: 1rem;
   margin-top: 3rem;
 }
+>>>>>>> 5fcd7c0e0020c70ab016967bf5b7bfba5343a82e:a1/assets/css/style.css

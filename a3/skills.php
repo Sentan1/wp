@@ -5,7 +5,7 @@
   <h1 style="color:#cd4f07; font-weight: normal;">All Skills</h1>
   <?php
   $skills = [];
-  $sql = "SELECT skill_id, title, category, level, rate FROM skills ORDER BY created_at DESC";
+  $sql = "SELECT skill_id, title, category, level, rate_per_hr AS rate FROM skills ORDER BY created_at DESC";
   if ($stmt = mysqli_prepare($conn, $sql)) {
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
@@ -15,7 +15,7 @@
   ?>
   <div class="row align-items-start">
     <div class="col-md-4">
-      <img src="assets/images/skills_banner.png" class="img-fluid" alt="Skills Overview">
+      <img src="assets/images/skills/skills_banner.png" class="img-fluid" alt="Skills Overview">
     </div>
     <div class="col-md-8">
       <table class="table table-striped table-hover align-middle">
