@@ -35,6 +35,10 @@
         </div>
       <?php endforeach; ?>
     </div>
+
+
+
+    
   <?php else: ?>
     <div class="gallery">
       <div class="gallery-item"><a href="#" data-image-modal="assets/images/skills/1.png"><img src="assets/images/skills/1.png" alt="Beginner Guitar Lessons"></a><p>Beginner Guitar Lessons</p></div>

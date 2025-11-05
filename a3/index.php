@@ -35,12 +35,16 @@ $defaultImg = 'assets/images/skills/1.png';
             <h5 class="text-white">Intro to PHP & MySQL</h5>
           </div>
         </div>
+
+
         <div class="carousel-item">
           <img src="assets/images/skills/1.png" class="d-block w-100" alt="Beginner Guitar Lessons">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
             <h5 class="text-white">Beginner Guitar Lessons</h5>
           </div>
         </div>
+
+        
         <div class="carousel-item">
           <img src="assets/images/skills/6.png" class="d-block w-100" alt="Digital Illustration with Procreate">
           <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
