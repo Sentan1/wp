@@ -39,7 +39,7 @@ if (!empty($_FILES['image']['name'])) {
   if (is_file($oldFull)) { @unlink($oldFull); }
 }
 
-$sql = "UPDATE skills SET title=?, description=?, category=?, level=?, rate=?, image_path=? WHERE skill_id=?";
+$sql = "UPDATE skills SET title=?, description=?, category=?, level=?, rate_per_hr=?, image_path=? WHERE skill_id=?";
 if ($stmt = mysqli_prepare($conn, $sql)) {
   mysqli_stmt_bind_param($stmt, 'ssssdsi', $title, $description, $category, $level, $rate, $newImagePath, $skillId);
   if (mysqli_stmt_execute($stmt)) {

@@ -30,7 +30,7 @@ $defaultImg = 'assets/images/skills/1.png';
         <h1 class="mb-3" style="color:#cd4f07; font-weight: 400;"><?php echo htmlspecialchars($skill['title']); ?></h1>
         <div class="mb-2"><strong>Category:</strong> <?php echo htmlspecialchars($skill['category']); ?></div>
         <div class="mb-2"><strong>Level:</strong> <?php echo htmlspecialchars(ucfirst($skill['level'])); ?></div>
-        <div class="mb-2"><strong>Rate:</strong> $<?php echo number_format((float)$skill['rate'], 2); ?>/hr</div>
+        <div class="mb-2"><strong>Rate:</strong> $<?php echo number_format((float)$skill['rate_per_hr'], 2); ?>/hr</div>
         <div class="mb-3"><strong>Instructor:</strong> <?php echo htmlspecialchars($skill['username'] ?? 'Unknown'); ?></div>
         <p><?php echo nl2br(htmlspecialchars($skill['description'])); ?></p>
         <a class="btn btn-secondary" href="skills.php">Back to Skills</a>

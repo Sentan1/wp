@@ -47,7 +47,7 @@ if (!$skill || (int)$skill['user_id'] !== (int)$_SESSION['user_id']) {
     </div>
     <div class="mb-3">
       <label for="rate" class="form-label">Rate per Hour ($) *</label>
-      <input type="number" step="0.01" class="form-control" id="rate" name="rate" required value="<?php echo htmlspecialchars($skill['rate']); ?>">
+      <input type="number" step="0.01" class="form-control" id="rate" name="rate" required value="<?php echo htmlspecialchars($skill['rate_per_hr']); ?>">
     </div>
     <div class="mb-3">
       <label class="form-label">Current Image</label><br>
